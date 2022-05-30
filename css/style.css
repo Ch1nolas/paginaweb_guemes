@@ -3,6 +3,54 @@
     margin: 0px 20px;
     background-image: linear-gradient(to top, #DFE9F3 0%, #fff 100%);
 }
+
+.en{
+    color:#00a1ff;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.es{
+    color:#333;
+    padding-right: 10px;
+    font-size: 20px;
+}
+.check{
+    position: relative;
+    width: 50px;
+}
+.check::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #333;
+    border-radius: 25px;
+}
+.check::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+
+}
+
+.check:checked::after{
+    left: 25px;
+    border: 2px solid #00a1ff;
+}
+.check:checked::before{
+    background: #00a1ff;
+}
+.traductor{
+    display: flex;
+    justify-content: center;
+    
+}
 .foto{
     background-image: url(/img/muerte_guemes.png);
     background-repeat: no-repeat;
@@ -35,9 +83,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
-    width: auto;
-    position: relative;
-    margin-bottom: 20px;
+    width: 350px;
+    margin-bottom: 25px;
 }
 
 .home_about-tittle{
@@ -59,6 +106,10 @@
     list-style: none;
 }
 
+.home_nav li:hover{
+    background-color: rgb(188, 188, 188);
+}
+
 .home_nav li {
     display: flex;
     font-size: 20px;
@@ -67,12 +118,19 @@
     margin: 0px 10px;
     text-transform: uppercase;
     color: aliceblue;
+    transition: 0.3s;
 }
 
 .home_nav ul {
     list-style: none;
     justify-content: center;
+    
+}
 
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: 25% !important;
+    margin-top: 0.125rem;
 }
 
 .text{
@@ -95,7 +153,7 @@
 .contenedor{
     max-width: 1200px;
     margin: 0 auto;
-    background: linear-gradient(to bottom, #D6B951 50%, rgb(243, 233, 147));
+    background: linear-gradient(to bottom, #F2DEA0 50%, #f1efde 100%);
 }
 
 .seccion-informatica {
@@ -106,24 +164,46 @@
     justify-content: center;
 }
 
+.seccion-imagen{
+    text-align: center;
+    padding-bottom: 15px;
+}
 
-@media (max-width: 768px){
-    .home_about-contexto{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 10px;
+.seccion-texto{
+    text-align: center;
+    padding-bottom: 15px;
+}
+@media (max-width: 1024px){
+    .contenedor{
+        max-width: 900px;
+        margin: 0 auto;
     }
+}
+@media (max-width: 768px){
 
     .contenido-foto p{
         font-size: 50px;
         color: aliceblue;
         font-weight: 400;
     }
+
+    .home_nav{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        flex-wrap: wrap;
+    }
+
+    .contenedor{
+        max-width: 600px;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 480px){
     .contenido-foto p{
-        font-size: 30px;
+        font-size: 25px;
+        font-weight: 600;
         color: aliceblue;
         font-weight: 400;
     }
@@ -135,6 +215,33 @@
     }
 
     .imagen-guemes{
-        width: 350px;
+        height: 300px;
+        width: 250px;
+
+    }
+
+    .contenedor{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .foto{
+        background-image: url(/img/muerte_guemes-Celular.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 450px;
+        width: 100%;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .home_nav li {
+        display: flex;
+        font-size: 15px;
+        text-align: center;
+        align-items: center;
+        margin: 0px 10px;
+        text-transform: uppercase;
+        color: aliceblue;
     }
 }
