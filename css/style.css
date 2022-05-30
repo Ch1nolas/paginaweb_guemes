@@ -1,0 +1,140 @@
+* body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px 20px;
+    background-image: linear-gradient(to top, #DFE9F3 0%, #fff 100%);
+}
+.foto{
+    background-image: url(/img/muerte_guemes.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.contenido-foto{
+    position:absolute;
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-foto p{
+    font-size: 65px;
+    color: aliceblue;
+    font-weight: 400;
+}
+
+.imagen-guemes{
+    background-image: url(/img/Martín_Miguel_de_Güemes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: auto;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.home_about-tittle{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 25px;
+} 
+
+.home_about-contexto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home_nav{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.home_nav li {
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    margin: 0px 10px;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+
+.home_nav ul {
+    list-style: none;
+    justify-content: center;
+
+}
+
+.text{
+    margin-right: 20px;
+    text-align: justify;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.sombra{
+    -webkit-box-shadow: 10px 5px 15px 0px rgba(112, 112, 112, 0.51);
+    -moz-box-shadow: 10px 5px 15px 0px rgba(112,112,112, 0.51);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #D6B951 50%, rgb(243, 233, 147));
+}
+
+.seccion-informatica {
+    justify-content: center;
+}
+
+.seccion-electronica{
+    justify-content: center;
+}
+
+
+@media (max-width: 768px){
+    .home_about-contexto{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+    }
+
+    .contenido-foto p{
+        font-size: 50px;
+        color: aliceblue;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 480px){
+    .contenido-foto p{
+        font-size: 30px;
+        color: aliceblue;
+        font-weight: 400;
+    }
+
+    .home_about-contexto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen-guemes{
+        width: 350px;
+    }
+}
