@@ -24,15 +24,15 @@
             </div>
         </section>
         <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="collapse navbar-collapse home_nav" id="navbarNavDropdown">
+            <div class=" navbar-collapse home_nav" id="navbarNavDropdown">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle home_nav-link" href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Proyectos alumnos informática
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
-                        <li><a class="dropdown-item" href="#">Proyecto 1</a></li>
-                        <li><a class="dropdown-item" href="#">Proyecto 2</a></li>
+                        <li><a class="dropdown-item" href="#P1i">Proyecto 1</a></li>
+                        <li><a class="dropdown-item" href="#P2i">Proyecto 2</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -41,11 +41,17 @@
                         Proyectos alumnos electrónica
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Proyecto 1</a></li>
-                        <li><a class="dropdown-item" href="#">Proyecto 2</a>
+                        <li><a class="dropdown-item" href="#P1e">Proyecto 1</a></li>
+                        <li><a class="dropdown-item" href="#P2e">Proyecto 2</a>
                         </li>
                     </ul>
                 </li>
+                <div class="traductor">
+                    <span class="es">Español</span>
+                    <input type="checkbox" class="check">
+                    <span class="en">English</span>
+                    <script src="./js/traductor.js"></script>
+                </div>
             </div>
             </div>
         </nav>
@@ -55,7 +61,6 @@
 
         <div class="home_about-contexto">
             <div class="imagen-guemes">
-                <img src="./img/Martín_Miguel_de_Güemes.jpg" height="500" alt="Imagen Guemes">
             </div>
             <div class="text">
                 <p>Martín Miguel Juan de Mata Güemes Montero de Goyechea y la Corte (Salta, 8 de febrero de 1785 -
@@ -69,12 +74,12 @@
                     voluptatem ullam necessitatibus minus illo enim voluptatum. Ipsa et, eligendi voluptatibus provident
                     rem ullam, aliquid, vero hic accusantium alias fuga unde reiciendis fugiat repudiandae!</p>
             </div>
-            
+
         </div>
         <p class="home_about-tittle">Proyecto alumnos informática</p>
         <section class="seccion-informatica">
 
-            <div class="proyecto1-i">
+            <div id="P1i" class="proyecto1-i">
                 <div class="seccion-imagen">
                     <img src="" alt="Imagen del proyecto 1 de Infomática">
                 </div>
@@ -84,7 +89,7 @@
                     qui!
                 </div>
             </div>
-            <div class="proyecto2-i">
+            <div id="P2i" class="proyecto2-i">
                 <div class="seccion-imagen">
                     <img src="" alt="Imagen del proyecto 2 de Infomática">
                 </div>
@@ -98,7 +103,7 @@
         <p class="home_about-tittle">Proyecto alumnos electrónica</p>
         <section class="seccion-electronica">
 
-            <div class="proyecto1-e">
+            <div id="P1e" class="proyecto1-e">
                 <div class="seccion-imagen">
                     <img src="" alt="Imagen del proyecto 1 de electrónica">
                 </div>
@@ -108,7 +113,7 @@
                     qui!
                 </div>
             </div>
-            <div class="proyecto2-e">
+            <div id="P2e" class="proyecto2-e">
                 <div class="seccion-imagen">
                     <img src="" alt="Imagen del proyecto 1 de electrónica">
                 </div>
@@ -123,6 +128,7 @@
     <footer>
         Hecho por Santino Vitale y Nicolas Martinez
     </footer>
+    
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
