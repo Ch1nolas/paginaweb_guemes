@@ -73,7 +73,7 @@
 }
 
 .contenido-foto p{
-    font-size: 65px;
+    font-size: 55px;
     color: aliceblue;
     font-weight: 400;
 }
@@ -173,6 +173,8 @@
     text-align: center;
     padding-bottom: 15px;
 }
+
+/* Medias Queries*/
 @media (max-width: 1024px){
     .contenedor{
         max-width: 900px;
@@ -182,7 +184,7 @@
 @media (max-width: 768px){
 
     .contenido-foto p{
-        font-size: 50px;
+        font-size: 40px;
         color: aliceblue;
         font-weight: 400;
     }
@@ -202,7 +204,7 @@
 
 @media (max-width: 480px){
     .contenido-foto p{
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 600;
         color: aliceblue;
         font-weight: 400;
