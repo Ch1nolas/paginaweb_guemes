@@ -8,4 +8,6 @@ https://webdesign.tutsplus.com/es/tutorials/how-to-build-flexible-modal-dialogs-
 **Modal Emergente con Bootstrap**
 https://getbootstrap.com/docs/4.0/components/modal/
 
+Vertically centered
+Add .modal-dialog-centered to .modal-dialog to vertically center the modal.
 
