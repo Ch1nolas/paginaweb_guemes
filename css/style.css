@@ -72,7 +72,7 @@
     justify-content: center;
 }
 
-.contenido-foto p{
+.contenido-foto h1{
     font-size: 55px;
     color: aliceblue;
     font-weight: 400;
@@ -89,7 +89,7 @@
 
 .home_about-tittle{
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     margin-bottom: 25px;
 } 
@@ -183,7 +183,7 @@
 }
 @media (max-width: 768px){
 
-    .contenido-foto p{
+    .contenido-foto h1{
         font-size: 40px;
         color: aliceblue;
         font-weight: 400;
@@ -203,11 +203,12 @@
 }
 
 @media (max-width: 480px){
-    .contenido-foto p{
-        font-size: 20px;
+    .contenido-foto h1{
+        font-size: 27px;
         font-weight: 600;
         color: aliceblue;
         font-weight: 400;
+        text-align: center;
     }
 
     .home_about-contexto{
