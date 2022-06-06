@@ -1,34 +1,38 @@
-* body{
-    font-family: 'Poppins', sans-serif;
-    margin: 0px 20px;
+@charset "UTF-8";
+/*------Seccion global------*/
+/*---Map---*/
+* body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0px 20px;
+  background-image: linear-gradient(to bottom, #BED2DD 100%, #dfebf1 0%); }
 
-    background-image: linear-gradient(to bottom, #BED2DD 100%, #dfebf1 0%);
-}
+footer {
+  text-align: center; }
 
-.en{
-    color:#00a1ff;
+/*------Seccion traductor------*/
+.traductor {
+  display: flex;
+  justify-content: center; }
+  .traductor .en {
+    color: #00a1ff;
     padding-left: 10px;
     font-size: 20px;
-    margin-right: 20px;
-}
-.es{
-    color:#f1efde;
+    margin-right: 20px; }
+  .traductor .es {
+    color: #f1efde;
     padding-right: 10px;
-    font-size: 20px;
-}
-.check{
+    font-size: 20px; }
+  .traductor .check {
     position: relative;
-    width: 50px;
-}
-.check::before{
+    width: 50px; }
+  .traductor .check::before {
     content: "";
     position: absolute;
     width: 50px;
     height: 25px;
     background: #333;
-    border-radius: 25px;
-}
-.check::after{
+    border-radius: 25px; }
+  .traductor .check::after {
     content: "";
     position: absolute;
     width: 25px;
@@ -37,251 +41,212 @@
     border-radius: 25px;
     transition: 0.25s;
     border: 2px solid #333;
-    box-sizing: border-box;
-
-}
-
-.check:checked::after{
+    box-sizing: border-box; }
+  .traductor .check:checked::after {
     left: 25px;
-    border: 2px solid #00a1ff;
-}
-.check:checked::before{
-    background: #00a1ff;
-}
-.traductor{
-    display: flex;
-    justify-content: center;
-    
-}
-.foto{
-    background-image: url(/img/muerte_guemes.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 450px;
-    width: 100%;
-    position: relative;
-}
+    border: 2px solid #00a1ff; }
+  .traductor .check:checked::before {
+    background: #00a1ff; }
 
-.contenido-foto{
-    position:absolute;
-    background-color: rgba(0, 0, 0, .5);
+/*------Seccion HEADER NAV------*/
+.foto {
+  background-image: url(/img/muerte_guemes.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  width: 100%;
+  position: relative; }
+  .foto .contenido-foto {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
+    justify-content: center; }
+    .foto .contenido-foto h1 {
+      font-size: 55px;
+      color: aliceblue;
+      font-weight: 400; }
 
-.contenido-foto h1{
-    font-size: 55px;
-    color: aliceblue;
-    font-weight: 400;
-}
-
-.imagen-guemes{
-    background-image: url(/img/Martín_Miguel_de_Güemes.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    width: 350px;
-    margin-bottom: 25px;
-}
-
-.navbar{
-    padding: 0 !important;
-}
-
-.home_about-tittle{
-    text-align: center;
-    margin-bottom: 25px;
-} 
-
-.home_about-contexto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.home_nav{
+.navbar {
+  padding: 0 !important; }
+  .navbar .home_nav {
     display: flex;
     justify-content: center;
     list-style: none;
     background-color: #023E73;
-    padding: 10px 0px;
-    
-}
+    padding: 10px 0px; }
+    .navbar .home_nav li {
+      display: flex;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      margin: 0px 10px;
+      text-transform: uppercase;
+      color: aliceblue; }
+    .navbar .home_nav .home_nav-li {
+      display: flex;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      margin: 0px 10px;
+      text-transform: uppercase;
+      color: aliceblue;
+      transition: 0.3s;
+      border-radius: 15px; }
+      .navbar .home_nav .home_nav-li .nav-link {
+        color: #f1efde !important; }
+      .navbar .home_nav .home_nav-li .home_nav-li:hover {
+        background-color: #001958; }
+      .navbar .home_nav .home_nav-li ul {
+        list-style: none;
+        justify-content: center; }
+        .navbar .home_nav .home_nav-li ul .dropdown-menu[data-bs-popper] {
+          top: 100%;
+          left: 25% !important;
+          margin-top: 0.125rem; }
 
-.home_nav-li:hover{
-    background-color: #001958;
-    
-}
+/*------Seccion Contenido------*/
+.sombra {
+  -webkit-box-shadow: 10px 5px 15px 0px rgba(112, 112, 112, 0.51);
+  -moz-box-shadow: 10px 5px 15px 0px rgba(112, 112, 112, 0.51);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px; }
 
-.home_nav-li {
-    display: flex;
-    font-size: 20px;
-    text-align: center;
-    align-items: center;
-    margin: 0px 10px;
-    text-transform: uppercase;
-    color: aliceblue;
-    transition: 0.3s;
-    border-radius: 15px;
-}
-
-.home_nav li {
-    display: flex;
-    font-size: 20px;
-    text-align: center;
-    align-items: center;
-    margin: 0px 10px;
-    text-transform: uppercase;
-    color: aliceblue
-}
-
-.home_nav ul {
-    list-style: none;
-    justify-content: center;
-    
-}
-
-
-.dropdown-menu[data-bs-popper] {
-    top: 100%;
-    left: 25% !important;
-    margin-top: 0.125rem;
-}
-
-.text{
-    margin-right: 20px;
-    text-align: justify;
-}
-
-.nav-link {
-    color: #f1efde !important;
-}
-
-.sombra{
-    -webkit-box-shadow: 10px 5px 15px 0px rgba(112, 112, 112, 0.51);
-    -moz-box-shadow: 10px 5px 15px 0px rgba(112,112,112, 0.51);
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.contenedor{
-    max-width: 1200px;
-    margin: 20px auto;
-    background-color: #c2ac69;
-    /*
+.contenedor {
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #c2ac69;
+  /*
     background: linear-gradient(to bottom, #F2DEA0 50%, #e9e5dd 75%);
-    */
-}
+    */ }
+  .contenedor .home_about-tittle {
+    text-align: center;
+    margin-bottom: 25px; }
+  .contenedor .home_about-contexto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contenedor .home_about-contexto .imagen-guemes {
+      background-image: url(/img/Martín_Miguel_de_Güemes.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 500px;
+      width: 350px;
+      margin-bottom: 25px; }
+    .contenedor .home_about-contexto .text {
+      margin-right: 20px;
+      text-align: justify; }
 
 .seccion-informatica {
-    justify-content: center;
-}
-
-.seccion-electronica{
-    justify-content: center;
-}
-
-.seccion-titulo{
+  justify-content: center; }
+  .seccion-informatica .seccion-titulo {
     text-align: center;
-    margin-bottom: 20px;
-}
-
-.seccion-imagen{
+    margin-bottom: 20px; }
+  .seccion-informatica .seccion-imagen {
     text-align: center;
     padding-bottom: 15px;
-}
-
-.seccion-texto{
+    height: 175px; }
+  .seccion-informatica .seccion-texto {
     text-align: center;
-    padding-bottom: 15px;
-}
+    padding: 15px 0; }
 
-footer{
-    text-align: center;
-}
+.seccion-electronica {
+  justify-content: center; }
 
+.modal-body {
+  display: flex;
+  justify-content: center; }
 
-.modal-body{
-    display: flex;
-    justify-content: center;
-}
+.imagen1 {
+  background-image: url("../img/proyecto-1i.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.imagen2 {
+  background-image: url("../img/proyecto-2i.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.imagen3 {
+  background-image: url("../img/proyecto-3i.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.imagen4 {
+  background-image: url("../img/proyecto-4i.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.imagen5 {
+  background-image: url("../img/proyecto-5i.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.imagen6 {
+  background-image: url("../img/proyecto-6i.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 /* Medias Queries*/
-@media (max-width: 1024px){
-    .contenedor{
-        max-width: 900px;
-        margin: 0 auto;
-    }
-}
-@media (max-width: 768px){
+@media (max-width: 1024px) {
+  .contenedor {
+    max-width: 900px;
+    margin: 0 auto; } }
 
-    .contenido-foto h1{
-        font-size: 40px;
-        color: aliceblue;
-        font-weight: 400;
-    }
+@media (max-width: 768px) {
+  .contenido-foto h1 {
+    font-size: 40px;
+    color: aliceblue;
+    font-weight: 400; }
+  .home_nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap; }
+  .contenedor {
+    max-width: 600px;
+    margin: 0 auto; } }
 
-    .home_nav{
-        display: flex;
-        justify-content: center;
-        list-style: none;
-        flex-wrap: wrap;
-    }
-
-    .contenedor{
-        max-width: 600px;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 480px){
-    .contenido-foto h1{
-        font-size: 27px;
-        font-weight: 600;
-        color: aliceblue;
-        font-weight: 400;
-        text-align: center;
-    }
-
-    .home_about-contexto{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .imagen-guemes{
-        height: 300px;
-        width: 250px;
-
-    }
-
-    .contenedor{
-        max-width: 400px;
-        margin: 0 auto;
-    }
-
-    .foto{
-        background-image: url(/img/muerte_guemes-Celular.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 450px;
-        width: 100%;
-        position: relative;
-        margin-bottom: 20px;
-    }
-
-    .home_nav li {
-        display: flex;
-        font-size: 15px;
-        text-align: center;
-        align-items: center;
-        margin: 0px 10px;
-        text-transform: uppercase;
-        color: aliceblue;
-    }
-}
+@media (max-width: 480px) {
+  .contenido-foto h1 {
+    font-size: 27px;
+    font-weight: 600;
+    color: aliceblue;
+    font-weight: 400;
+    text-align: center; }
+  .home_about-contexto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .imagen-guemes {
+    height: 300px;
+    width: 250px; }
+  .contenedor {
+    margin-top: 20px;
+    max-width: 400px;
+    margin: 0 auto; }
+  .foto {
+    background-image: url(/img/muerte_guemes-Celular.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    position: relative; }
+  .home_nav li {
+    display: flex;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    margin: 0px 10px;
+    text-transform: uppercase;
+    color: aliceblue; } }

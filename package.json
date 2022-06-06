@@ -1,0 +1,21 @@
+{
+  "name": "paginaweb_guemes-main",
+  "version": "1.0.0",
+  "description": "*Links de las páginas a utilizar en un futuro*",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss sass/style.scss css/style.css",
+    "watch-css":"nodemon -e scss -x \"npm run build-css\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ch1nolas/paginaweb_guemes.git"
+  },
+  "author": "Santino Vitale y Nicolas Martinez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ch1nolas/paginaweb_guemes/issues"
+  },
+  "homepage": "https://github.com/Ch1nolas/paginaweb_guemes#readme"
+}
