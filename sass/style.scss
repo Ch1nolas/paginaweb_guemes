@@ -1,39 +1,41 @@
 /*------Seccion global------*/
 @import "variables";
 
-* body{
+* body {
     font-family: 'Poppins', sans-serif;
     margin: 0px 20px;
     background-image: linear-gradient(to bottom, #BED2DD 100%, #dfebf1 0%);
 }
 
-footer{
+footer {
     text-align: center;
 }
 
 /*------Seccion traductor------*/
 
-.traductor{
+.traductor {
     display: flex;
     justify-content: center;
-    
-    .en{
-        color:#00a1ff;
+
+    .en {
+        color: #00a1ff;
         padding-left: 10px;
         font-size: 20px;
         margin-right: 20px;
     }
-    .es{
-        color:#f1efde;
+
+    .es {
+        color: #f1efde;
         padding-right: 10px;
         font-size: 20px;
     }
-    .check{
+
+    .check {
         position: relative;
         width: 50px;
     }
 
-    .check::before{
+    .check::before {
         content: "";
         position: absolute;
         width: 50px;
@@ -42,7 +44,7 @@ footer{
         border-radius: 25px;
     }
 
-    .check::after{
+    .check::after {
         content: "";
         position: absolute;
         width: 25px;
@@ -52,20 +54,21 @@ footer{
         transition: 0.25s;
         border: 2px solid #333;
         box-sizing: border-box;
-        
+
     }
-        
-    .check:checked::after{
+
+    .check:checked::after {
         left: 25px;
         border: 2px solid #00a1ff;
     }
-    .check:checked::before{
+
+    .check:checked::before {
         background: #00a1ff;
     }
 }
 
 /*------Seccion HEADER NAV------*/
-.foto{
+.foto {
     background-image: url(/img/muerte_guemes.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,8 +76,8 @@ footer{
     width: 100%;
     position: relative;
 
-    .contenido-foto{
-        position:absolute;
+    .contenido-foto {
+        position: absolute;
         background-color: rgba(0, 0, 0, .5);
         width: 100%;
         height: 100%;
@@ -82,8 +85,8 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    
-        h1{
+
+        h1 {
             font-size: 55px;
             color: aliceblue;
             font-weight: 400;
@@ -91,16 +94,10 @@ footer{
     }
 }
 
-
-
-
-
-
-
-.navbar{
+.navbar {
     padding: 0 !important;
 
-    .home_nav{
+    .home_nav {
         display: flex;
         justify-content: center;
         list-style: none;
@@ -114,100 +111,72 @@ footer{
             align-items: center;
             margin: 0px 10px;
             text-transform: uppercase;
-            color: aliceblue
-        }
-        
-        .home_nav-li {
-            display: flex;
-            font-size: 20px;
-            text-align: center;
-            align-items: center;
-            margin: 0px 10px;
-            text-transform: uppercase;
             color: aliceblue;
             transition: 0.3s;
             border-radius: 15px;
 
-            .nav-link {
+            .home_nav li:hover {
+                background-color: #001958;
+
+            }
+            .home_nav-link {
                 color: #f1efde !important;
             }
 
-            .home_nav-li:hover{
-                background-color: #001958;
-                
-            }
 
             ul {
                 list-style: none;
                 justify-content: center;
-                
-                .dropdown-menu[data-bs-popper] {
-                    top: 100%;
-                    left: 25% !important;
-                    margin-top: 0.125rem;
-                }
             }
+
+        .dropdown-menu[data-bs-popper] {
+            top: 100%;
+            left: 25% !important;
+            margin-top: 0.125rem;
+        }
+
         }
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*------Seccion Contenido------*/
-.sombra{
+.sombra {
     -webkit-box-shadow: 10px 5px 15px 0px rgba(112, 112, 112, 0.51);
-    -moz-box-shadow: 10px 5px 15px 0px rgba(112,112,112, 0.51);
+    -moz-box-shadow: 10px 5px 15px 0px rgba(112, 112, 112, 0.51);
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
 }
 
-.contenedor{
+.contenedor {
     max-width: 1200px;
     margin: 20px auto;
     background-color: #c2ac69;
+
     /*
     background: linear-gradient(to bottom, #F2DEA0 50%, #e9e5dd 75%);
     */
-    .home_about-tittle{
+    .home_about-tittle {
         text-align: center;
         margin-bottom: 25px;
-    } 
+    }
 
-    .home_about-contexto{
+    .home_about-contexto {
         display: flex;
         flex-direction: column;
         align-items: center;
-    
-        .imagen-guemes{
+
+        .imagen-guemes {
             background-image: url(/img/Martín_Miguel_de_Güemes.jpg);
             background-repeat: no-repeat;
-            background-size: cover;
-            height: 500px;
-            width: 350px;
+            background-size: contain;
+            height: 400px;
+            width: 100%;
+            background-position: center;
             margin-bottom: 25px;
         }
-    
-        .text{
+
+        .text {
             margin-right: 20px;
             text-align: justify;
         }
@@ -216,37 +185,38 @@ footer{
 
 .seccion-informatica {
     justify-content: center;
-    
-    .seccion-titulo{
+
+    .seccion-titulo {
         text-align: center;
         margin-bottom: 20px;
     }
-    
-    .seccion-imagen{
+
+    .seccion-imagen {
         text-align: center;
         padding-bottom: 15px;
         height: 175px;
     }
-    
-    .seccion-texto{
+
+    .seccion-texto {
         text-align: center;
         padding: 15px 0;
     }
 }
 
-.seccion-electronica{
+.seccion-electronica {
     justify-content: center;
 }
 
 
 
-.modal-body{
+.modal-body {
     display: flex;
     justify-content: center;
 }
 
-@each $imagen, $link in $map-imagen {
-    .#{$imagen}{
+@each $imagen,
+$link in $map-imagen {
+    .#{$imagen} {
         background-image: url($link);
         background-size: contain;
         background-repeat: no-repeat;
@@ -255,76 +225,78 @@ footer{
 }
 
 /* Medias Queries*/
-@media (max-width: 1024px){
-    .contenedor{
+@media (max-width: 1024px) {
+    .contenedor {
         max-width: 900px;
         margin: 0 auto;
     }
-}
-@media (max-width: 768px){
 
-    .contenido-foto h1{
+    .home_nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .contenido-foto h1 {
         font-size: 40px;
         color: aliceblue;
         font-weight: 400;
+        text-align: center;
     }
 
-    .home_nav{
+    .home_nav {
         display: flex;
         justify-content: center;
         list-style: none;
         flex-wrap: wrap;
     }
 
-    .contenedor{
+    .contenedor {
         max-width: 600px;
         margin: 0 auto;
     }
 }
 
-@media (max-width: 480px){
-    .contenido-foto h1{
-        font-size: 27px;
-        font-weight: 600;
-        color: aliceblue;
-        font-weight: 400;
-        text-align: center;
-    }
-
-    .home_about-contexto{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .imagen-guemes{
-        height: 300px;
-        width: 250px;
-
-    }
-
-    .contenedor{
+@media (max-width: 480px) {
+    
+    .contenedor {
         margin-top: 20px;
         max-width: 400px;
         margin: 0 auto;
+
+        .home_about-contexto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+            .imagen-guemes {
+                width: 100%;
+    
+            }
+    
     }
 
-    .foto{
+    .foto {
         background-image: url(/img/muerte_guemes-Celular.png);
         background-repeat: no-repeat;
         background-size: cover;
         height: 450px;
         width: 100%;
         position: relative;
+
+        .contenido-foto h1 {
+            font-size: 27px;
+            font-weight: 600;
+            color: aliceblue;
+            font-weight: 400;
+            text-align: center;
+        }
     }
 
-    .home_nav li {
-        display: flex;
+    .navbar .home_nav li {
         font-size: 15px;
-        text-align: center;
-        align-items: center;
-        margin: 0px 10px;
-        text-transform: uppercase;
-        color: aliceblue;
     }
 }
