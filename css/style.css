@@ -188,7 +188,8 @@ footer {
   background-image: url("../img/proyecto-6i.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center; 
+}
 
 /* Medias Queries*/
 @media (max-width: 1024px) {
