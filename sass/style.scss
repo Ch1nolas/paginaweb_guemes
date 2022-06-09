@@ -205,6 +205,23 @@ footer {
 
 .seccion-electronica {
     justify-content: center;
+    justify-content: center;
+
+    .seccion-titulo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .seccion-imagen {
+        text-align: center;
+        padding-bottom: 15px;
+        height: 175px;
+    }
+
+    .seccion-texto {
+        text-align: center;
+        padding: 15px 0;
+    }
 }
 
 
