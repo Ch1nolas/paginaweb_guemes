@@ -6,15 +6,15 @@
 
 <p>Lenguajes utilizados:</p>
 <ul>
-  <li>-HTML5</li>
-  <li>-CSS3</li>
+  <li>HTML5</li>
+  <li>CSS3</li>
   <li>JavaScript</li>
 </ul>
 
 <p>Frameworks utilizados</p>
 <ul>
-  <li>-Bootstrap v5.2</li>
-  <li>-SASS</li>
+  <li>Bootstrap v5.2</li>
+  <li>SASS</li>
 </ul>
 
 *Realizado por Nicolás Martinez y Santino Vitale*
