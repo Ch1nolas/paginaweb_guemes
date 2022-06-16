@@ -1,8 +1,3 @@
-# paginaweb_guemes
+# Proyecto Desarrollo Web 2022 Para el Colegio ETec 
 
-*Links de las páginas a utilizar en un futuro*
-
-
-Vertically centered
-Add .modal-dialog-centered to .modal-dialog to vertically center the modal.
-
+*Realizado por Nicolás Martinez*
