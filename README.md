@@ -17,6 +17,14 @@
   <li>SASS</li>
 </ul>
 
+<p>Para usar SASS</p>
+<ul>
+  <li>Instala NodeJS</li>
+  <li>Instala NPM</li>
+  <li>Inicia el NPM en el repo con el comando: npm init</li>
+  <li>npm install -D node-sass nodemon</li>
+  <li>npm run watch-css</li>
+</ul>
 <br>
 <br>
 Link del dominio del proyecto: https://guemes-etec-informatica.netlify.app/
