@@ -17,18 +17,8 @@
   <li>SASS</li>
 </ul>
 
-<p>Para usar SASS</p>
-<ul>
-  <li>Instala NodeJS</li>
-  <li>Instala NPM</li>
-  <li>Inicia el NPM en el repo con el comando: npm init</li>
-  <li>npm install -D node-sass nodemon</li>
-  <li>npm run watch-css</li>
-</ul>
 <br>
 <br>
-<hr>
-Link para hacer los botones de redes sociales: https://www.youtube.com/watch?v=9ZCTY_CJtqs
 Link del dominio del proyecto: https://guemes-etec-informatica.netlify.app/
 
 *Realizado por Nicolás Martinez y Santino Vitale*

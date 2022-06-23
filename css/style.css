@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*------Seccion global------*/
 /*---Map---*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 * body {
   font-family: 'Poppins', sans-serif;
   margin: 0px 20px;
@@ -134,15 +135,28 @@ footer {
       margin-right: 20px;
       text-align: justify; }
 
+.home_aboutus-text {
+  display: flex;
+  padding-bottom: 10px;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .home_aboutus-text .home_aboutus-p {
+    text-align: center; }
+  .home_aboutus-text a {
+    text-decoration: none;
+    color: #333; }
+  .home_aboutus-text a:hover {
+    color: #333; }
+
 .seccion-informatica {
   justify-content: center; }
-  .seccion-informatica .seccion-titulo {
-    text-align: center;
-    margin-bottom: 20px; }
   .seccion-informatica .seccion-imagen {
     text-align: center;
     padding-bottom: 15px;
     height: 175px; }
+  .seccion-informatica .seccion-titulo {
+    text-align: center;
+    margin-bottom: 20px; }
   .seccion-informatica .seccion-texto {
     text-align: center;
     padding: 15px 0; }
@@ -212,6 +226,53 @@ footer {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; }
+
+/*------Seccion Boton GitHub------*/
+.wrapper .button {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out; }
+
+.wrapper .button:hover {
+  width: 200px; }
+
+.wrapper .button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out; }
+
+.wrapper .button:nth-child(1):hover .icon {
+  background: #333; }
+
+.wrapper .button:nth-child(2):hover .icon {
+  background: #333; }
+
+.wrapper .button:hover .icon i {
+  color: #fff; }
+
+.wrapper .button span {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 10px;
+  transition: all 0.3s ease-out; }
+
+.wrapper .button:nth-child(1) span {
+  color: #333; }
+
+.wrapper .button:nth-child(2) span {
+  color: #333; }
 
 /* Medias Queries*/
 @media (max-width: 1024px) {
