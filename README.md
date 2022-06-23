@@ -27,6 +27,8 @@
 </ul>
 <br>
 <br>
+<hr>
+Link para hacer los botones de redes sociales: https://www.youtube.com/watch?v=9ZCTY_CJtqs
 Link del dominio del proyecto: https://guemes-etec-informatica.netlify.app/
 
 *Realizado por Nicolás Martinez y Santino Vitale*
