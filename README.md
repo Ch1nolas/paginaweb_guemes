@@ -2,7 +2,7 @@
 <br>
 <br>
 <p>Descripción:</p>
-<p>Página para el acto del 16/07/2022 para la Escuela Tecninca ETec la cual contiene la información de los proyectos que hicieron los alumnos de Informática y Electrónica sobre la comnemoración a Martín Miguel de Güemes. El mismos se puede ver en inglés</p>
+<p>Página para el acto del 16/07/2022 para la Escuela Tecnica ETec la cual contiene la información de los proyectos que hicieron los alumnos de Informática y Electrónica sobre la conmemoración a Martín Miguel de Güemes. El mismos se puede ver en inglés</p>
 
 <p>Lenguajes utilizados:</p>
 <ul>
